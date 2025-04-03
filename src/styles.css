@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .diagram{
+    width:400px;
+    height:400px;
+    background-image:url('/usb.svg');
+    background-repeat:no-repeat;
+    background-position:center;
+  }
+  .diagram-container{
+    flex:1;
+    overflow: hidden;
+  }
+  .main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+  }
+  
+  .sidebar {
+    background: #222;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .resizer {
+    width: 5px;
+    background: #555;
+    cursor: ew-resize;
+    transition: background 0.2s;
+  }
+  
+  .resizer:hover {
+    background: #888;
+  }
+  
+  /* Main content now fills the rest of the width */
+  

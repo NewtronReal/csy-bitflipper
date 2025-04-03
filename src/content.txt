@@ -1,0 +1,12 @@
+there is a hardware device emulator which has two 256 bit registers the first 256bit register is locked from external access but second 256bit register can be accessed by gpio0,1,2 pins
+
+the locked register contains a flag value(any flag which has 32 characters) and second register is initialized to 1 by default on applying a voltage of 3.3v on each gpio pins
+
+0 pin lshifts the register by 1
+1 pin rshifts the register by 1
+2 pin takes the 1's complement of the register
+
+the device gets unlocked only if the locked register is set to 0
+
+make a react js project and files which emulates this hardware
+
